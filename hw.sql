@@ -85,7 +85,7 @@ SELECT ratings.rating, ratings.timestamp, movies.title
 FROM ratings
 INNER JOIN movies ON ratings.movie_id=movies.id 
 WHERE movies.title LIKE "%Godfather, The%"
-ORDER BY ratings.timestamp ASC;
+ORDER BY ratings.timestamp DESC;
 
 --question 3--
  --Find the comedies from 2005 and get the title and imdbid from the links table--
@@ -101,7 +101,7 @@ FROM ratings
 INNER JOIN movies ON ratings.movie_id=movies.id
 WHERE ratings.rating IS NULL;
 
-### Complete the following aggregation objectives:
+--### Complete the following aggregation objectives:--
 
 --question 1--
 -- Get the average rating for a movie--
